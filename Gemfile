@@ -10,4 +10,3 @@ gem "middleman-livereload", "~> 3.1.0"
 
 gem 'puma'
 gem 'rack-contrib'
-gem "jquery-middleman"

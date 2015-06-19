@@ -1,17 +1,4 @@
 #hero {
-  /*float:left;*/
   width: 100%;
   z-index: -9999;
-}
-
-#title {
-  position: absolute;
-  /*top: 50px;*/
-  width: 800px;
-  height: 500px;
-  margin: 50px auto;
-  background-color: white;
-  opacity: 0.5;
-  text-align: center;
-  top: 150px;
 }
