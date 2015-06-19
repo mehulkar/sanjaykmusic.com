@@ -52,6 +52,10 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
+set :fonts_dir, "fonts"
+
+# sprockets.append_path File.join root, 'fonts'
+# sprockets.import_asset File.join root, 'source', 'fonts', 'GeoSansLight.ttf'
 
 # Build-specific configuration
 configure :build do
