@@ -28,7 +28,7 @@
 }
 
 header {
-  background: #ccc;
+  background: rgb(243, 243, 243);
   display: block;
   font-family: 'GeoSansLight';
   font-size: 36px;
@@ -41,7 +41,6 @@ header .right {
 
 header .right ul {
   margin: 0;
-  /*margin-right: 10px;*/
 }
 header .right li {
   display: inline;
