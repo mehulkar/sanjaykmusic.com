@@ -3,6 +3,21 @@
   src: url("/fonts/GeoSansLight.ttf") format("truetype");
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  background: url("/images/backgrounds/back-1.jpg") no-repeat center center fixed;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 #hero {
   z-index: -1;
   position: absolute;
@@ -56,7 +71,7 @@ circle {
   display: table-cell;
   width: 100%;
   vertical-align: middle;
-  /*background-color: white;*/
+  background-color: white;
   line-height: 1.43;
 }
 
@@ -64,8 +79,8 @@ header {
   background: rgb(243, 243, 243);
   display: block;
   font-family: 'GeoSansLight';
-  font-size: 24px;
-  padding: 5px 20px;
+  font-size: 48px;
+  padding: 10px 40px;
 }
 
 header .right {
@@ -85,7 +100,7 @@ header .right a {
 }
 
 header .right img {
-  -webkit-filter: grayscale(1); -webkit-filter: grayscale(100%);
+  /*-webkit-filter: grayscale(1); -webkit-filter: grayscale(100%);
   filter: gray; filter: grayscale(100%);
-  filter: url(desaturate.svg#greyscale);
+  filter: url(desaturate.svg#greyscale);*/
 }
