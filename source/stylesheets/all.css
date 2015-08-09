@@ -61,7 +61,12 @@ header .right a {
 
 .cb-slideshow:after {
     content: '';
-    background-image: url(../images/backgrounds/back-1.jpg);
+    /*
+      * When this is uncommented, it shows up, but blocks the
+      * rest of the animations / slides for some reason
+      * TODO: fix;
+    */
+    /*background-image: url(../images/backgrounds/back-1.jpg);*/
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center center;
