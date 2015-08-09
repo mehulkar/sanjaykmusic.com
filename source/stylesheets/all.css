@@ -59,10 +59,14 @@ header .right a {
   list-style-type: none;
 }
 
-/*.cb-slideshow:after {
+.cb-slideshow:after {
     content: '';
-    background: transparent url(../images/backgrounds/back-1.jpg) repeat top left;
-}*/
+    background-image: url(../images/backgrounds/back-1.jpg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
 
 .cb-slideshow li span {
     width: 100%;
@@ -76,7 +80,8 @@ header .right a {
     background-repeat: none;
     opacity: 0;
     z-index: 0;
-    animation: imageAnimation 36s linear infinite 0s;
+    animation:          imageAnimation 36s linear infinite 0s;
+    -webkit-animation:  imageAnimation 36s linear infinite 0s;
 }
 
 .cb-slideshow li div {
@@ -89,6 +94,7 @@ header .right a {
     opacity: 0;
     color: #fff;
     animation: titleAnimation 36s linear infinite 0s;
+    -webkit-animation: titleAnimation 36s linear infinite 0s;
 }
 .cb-slideshow li div h3 {
     font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
@@ -146,14 +152,46 @@ header .right a {
 }
 
 @keyframes imageAnimation {
-    0% { opacity: 0; animation-timing-function: ease-in; }
-    8% { opacity: 1; animation-timing-function: ease-out; }
+    0% {
+      opacity: 0;
+      animation-timing-function: ease-in;
+      -webkit-animation-timing-function: ease-in;
+    }
+    8% {
+      opacity: 1;
+      animation-timing-function: ease-out;
+      -webkit-animation-timing-function: ease-out;
+    }
     17% { opacity: 1 }
     25% { opacity: 0 }
     100% { opacity: 0 }
 }
 
 @keyframes titleAnimation {
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@-webkit-keyframes imageAnimation {
+    0% {
+      opacity: 0;
+      animation-timing-function: ease-in;
+      -webkit-animation-timing-function: ease-in;
+    }
+    8% {
+      opacity: 1;
+      animation-timing-function: ease-out;
+      -webkit-animation-timing-function: ease-out;
+    }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@-webkit-keyframes titleAnimation {
     0% { opacity: 0 }
     8% { opacity: 1 }
     17% { opacity: 1 }
