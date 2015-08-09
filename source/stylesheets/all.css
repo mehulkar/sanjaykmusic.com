@@ -71,6 +71,10 @@ header .right a img {
 
 /* HAXXORS */
 /* Same has height of header, since this is position:fixed; */
+.cb-slideshow {
+  background-color: black;
+}
+
 .cb-slideshow,
 .cb-slideshow:after {
   top: 65px;
@@ -106,33 +110,29 @@ header .right a img {
     background-repeat: no-repeat;
     opacity: 0;
     z-index: 0;
-    animation:          imageAnimation 36s linear infinite 0s;
-    -webkit-animation:  imageAnimation 36s linear infinite 0s;
+    animation:          imageAnimation 30s linear infinite 0s;
+    -webkit-animation:  imageAnimation 30s linear infinite 0s;
 }
 
 
-.cb-slideshow li:nth-child(1) span {
+.cb-slideshow li:nth-child(2) span {
     background-image: url(../images/backgrounds/back-2.jpg)
 }
-.cb-slideshow li:nth-child(2) span {
+
+.cb-slideshow li:nth-child(3) span {
     background-image: url(../images/backgrounds/back-3.jpg);
     animation-delay: 6s;
     -webkit-animation-delay: 6s;
 }
-.cb-slideshow li:nth-child(3) span {
-    background-image: url(../images/backgrounds/back-3.jpg);
+.cb-slideshow li:nth-child(4) span {
+    background-image: url(../images/backgrounds/back-4.jpg);
     animation-delay: 12s;
     -webkit-animation-delay: 12s;
 }
-.cb-slideshow li:nth-child(4) span {
-    background-image: url(../images/backgrounds/back-4.jpg);
-    animation-delay: 18s;
-    -webkit-animation-delay: 18s;
-}
 .cb-slideshow li:nth-child(5) span {
     background-image: url(../images/backgrounds/back-5.jpg);
-    animation-delay: 24s;
-    -webkit-animation-delay: 24s;
+    animation-delay: 18s;
+    -webkit-animation-delay: 18s;
 }
 
 .cb-slideshow li:nth-child(2) div {
@@ -146,10 +146,6 @@ header .right a img {
 .cb-slideshow li:nth-child(4) div {
     animation-delay: 18s;
     -webkit-animation-delay: 18s;
-}
-.cb-slideshow li:nth-child(5) div {
-    animation-delay: 24s;
-    -webkit-animation-delay: 24s;
 }
 
 @media screen and (max-width: 1140px) {

@@ -14,37 +14,10 @@
 }
 
 #title .name { width: 240px; }
-#title circle { margin-left: 240px; }
+#title img { margin-left: 240px; }
 
 #title .name,
-#title circle {
+#title img {
   display: inline-block;
   position: absolute;
-}
-
-circle {
-  background-color: white;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  color: black;
-  text-align: center;
-  -webkit-transform:rotateY(180deg);
-  -moz-transform:rotateY(180deg);
-  -o-transform:rotateY(180deg);
-  -ms-transform:rotateY(180deg);
-  unicode-bidi:bidi-override;
-  direction:rtl;
-}
-
-circle .arrow-left {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent;
-  border-right: 25px solid black;
-  position: relative;
-  top: 0px;
-  left: -10px;
 }
