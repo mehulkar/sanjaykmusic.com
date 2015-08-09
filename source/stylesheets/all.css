@@ -24,8 +24,14 @@ header {
   background: rgb(243, 243, 243);
   display: block;
   font-family: 'GeoSansLight';
-  font-size: 48px;
+  font-size: 36px;
   padding: 10px 40px;
+  z-index: 9999999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 header .right {
@@ -39,11 +45,18 @@ header .right li {
   display: inline;
 }
 
-header .right a {
+header .right li a {
   color: black;
   text-decoration: none;
+  position: relative;
+  top: 5px;
 }
-
+header .right a img {
+  width: 36px;
+  height: 36px;
+  margin:0;
+  padding:0;
+}
 
 .cb-slideshow,
 .cb-slideshow:after {
@@ -55,6 +68,14 @@ header .right a {
     z-index: 0;
     margin-top: 0;
 }
+
+/* HAXXORS */
+/* Same has height of header, since this is position:fixed; */
+.cb-slideshow,
+.cb-slideshow:after {
+  top: 65px;
+}
+
 .cb-slideshow li {
   list-style-type: none;
 }
